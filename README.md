@@ -1,11 +1,14 @@
-Making my first slackbot to automatically generate subtasks to a specific parent task in Asana.
+Making my first lambda in AWS to automatically generate subtasks to a specific parent task in Asana when files are added to our S3 bucket.
 
 
 ## What I want this to do
-1. Trigger an action upon receiving a message from specific slack channel
-2. Read the contents of the message
-3. Utilise the Asana slackbot to create a subtask to a specific existing parent task, based on the parent task's unique id
+1. Trigger an action upon a file being uploaded
+2. Read the file metadata
+3. Generate a POST request to create a subtask in Asana
+4. Direct this task to a specific parent task in Asana
 
 
 ## Technologies used
-
+AWS Lambda
+Asana 
+Python SDK
